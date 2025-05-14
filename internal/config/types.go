@@ -30,5 +30,6 @@ type Keepalive struct {
 type Router map[string]RouterEntry
 
 type RouterEntry struct {
-	Endpoint string `json:"endpoint"`
+	Endpoint string            `json:"endpoint"`
+	Labels   map[string]string `json:"labels"`
 }
